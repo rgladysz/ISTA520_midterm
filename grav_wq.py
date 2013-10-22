@@ -51,7 +51,7 @@ for line in gp:
 	for i in range(start_timestep, end_timestep):
 		command = "python grav.py" +i+"_density_grid.txt %s %s %s %s" % (gp_list[count][0], gp_list[count][1], gp_list[count][2], gp_list[count][3])
 		print command
-		outfile = sys.argv[3]+"/outputs/"+str(gp_list[count][0]) +"_" +i+"_density_file +".out"
+		outfile = sys.argv[3]+"/outputs/"+str(gp_list[count][0]) +"_"+i+"_density_grid.txt.out"
 		print outfile
 		count += 1
 		T = Task(command)
